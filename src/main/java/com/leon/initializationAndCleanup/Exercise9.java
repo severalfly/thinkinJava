@@ -1,3 +1,4 @@
+package com.leon.initializationAndCleanup;
 public class Exercise9
 {
 	int a = 0;

@@ -1,3 +1,4 @@
+package com.leon.initializationAndCleanup;
 class Window
 {
 	Window(int marker)

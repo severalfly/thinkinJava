@@ -1,3 +1,4 @@
+package com.leon.initializationAndCleanup;
 class Book{
 	public static int cnt = 0; 
 	boolean checkedOut = false;

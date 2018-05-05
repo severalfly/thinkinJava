@@ -1,3 +1,4 @@
+package com.leon.initializationAndCleanup;
 class Person
 {
 	public void eat(Apple apple)

@@ -1,3 +1,4 @@
+package com.leon.initializationAndCleanup;
 public class Dog
 {
 	private void bark(String name)

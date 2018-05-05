@@ -1,3 +1,5 @@
+package com.leon.initializationAndCleanup;
+
 public class ArraysOfPrimitives
 {
 	public static void main(String[] args) {
