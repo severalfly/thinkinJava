@@ -12,16 +12,17 @@ public class GetChannel
 
 	public static void main(String[] args) throws  Exception
 	{
-		FileChannel fc = new FileOutputStream("data.txt").getChannel();
+		String name = "/Users/zhangyunfei/work/openlearn/thinkinJava/data.txt";
+		FileChannel fc = new FileOutputStream(name).getChannel();
 		fc.write(ByteBuffer.wrap("Some text\n".getBytes()));
 		fc.close();
 
-		fc = new RandomAccessFile("data.txt", "rw").getChannel();
+		fc = new RandomAccessFile(name, "rw").getChannel();
 		fc.position(fc.size());
 		fc.write(ByteBuffer.wrap("More text\n".getBytes()));
 		fc.close();
 
-		fc = new FileInputStream("data.txt").getChannel();
+		fc = new FileInputStream(name).getChannel();
 		ByteBuffer buff = ByteBuffer.allocate(BSIZE);
 		fc.read(buff);
 		buff.flip();
