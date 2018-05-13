@@ -1,5 +1,7 @@
 package com.leon.io.nio;
 
+import com.leon.constant.Constants;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.RandomAccessFile;
@@ -12,7 +14,7 @@ public class GetChannel
 
 	public static void main(String[] args) throws  Exception
 	{
-		String name = "/Users/zhangyunfei/work/openlearn/thinkinJava/rdata/data.txt";
+		String name = Constants.PATH_PRE + "rdata/data.txt";
 		FileChannel fc = new FileOutputStream(name).getChannel();
 		fc.write(ByteBuffer.wrap("Some text\n".getBytes()));
 		fc.close();
