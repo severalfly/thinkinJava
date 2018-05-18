@@ -32,7 +32,7 @@
 	</dependencies>
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
-		<testSourceDirectory>test</testSourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
 		<finalName>order</finalName>
 		<plugins>
 		 <plugin>
