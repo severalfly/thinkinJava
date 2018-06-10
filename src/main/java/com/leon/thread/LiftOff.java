@@ -1,5 +1,7 @@
 package com.leon.thread;
 
+import java.util.concurrent.TimeUnit;
+
 public class LiftOff implements Runnable
 {
 	protected int countDown = 10;
@@ -23,10 +25,20 @@ public class LiftOff implements Runnable
 	@Override
 	public void run()
 	{
-		while (this.countDown -- > 0)
+		try
 		{
-			System.out.println(status());
-			Thread.yield();
+
+			while (this.countDown-- > 0)
+			{
+				System.out.println(status());
+				//			Thread.yield();
+				TimeUnit.MILLISECONDS.sleep(100);
+			}
+			int a = 0;
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
 		}
 	}
 }
