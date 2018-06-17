@@ -107,6 +107,8 @@ public class OrnamentalGarden
 		{
 			exec.execute(new Entrance(i));
 		}
+		Thread.sleep(3 * 1000L);
+		Entrance.cancel();
 		exec.shutdown();
 		if (!exec.awaitTermination(250, TimeUnit.MILLISECONDS))
 		{
