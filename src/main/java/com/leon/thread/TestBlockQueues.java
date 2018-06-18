@@ -75,7 +75,7 @@ public class TestBlockQueues
 		t.start();
 		for (int i = 0; i < 5; i++)
 		{
-			runner.add(new LiftOff(2));
+			runner.add(new LiftOff(3));
 		}
 		getKey("Press 'Enter' (" + msg + ")");
 		t.interrupt();
