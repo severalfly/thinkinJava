@@ -28,6 +28,13 @@
 			<groupId>com.huoli</groupId>
 			<artifactId>api-encryption</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.0</version>
+		</dependency>
+
 
 	</dependencies>
 	<build>
