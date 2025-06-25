@@ -12,7 +12,7 @@ public class Counter1 extends Applet
 	private int count = 0;
 	private Button onOff = new Button("Toggle");
 	private Button start = new Button("Start");
-	private TextField t = new TextField(10);
+	private TextField t = new TextField(20);
 	private boolean runFlag = true;
 
 	public void init()
@@ -28,7 +28,6 @@ public class Counter1 extends Applet
 	{
 		while (true)
 		{
-
 			try
 			{
 				Thread.currentThread().sleep(100);
@@ -39,7 +38,6 @@ public class Counter1 extends Applet
 			}
 			if (this.runFlag)
 			{
-
 				this.t.setText((this.count++) + "");
 			}
 		}
@@ -50,7 +48,7 @@ public class Counter1 extends Applet
 		@Override
 		public void actionPerformed(ActionEvent e)
 		{
-			go();
+			runFlag = !runFlag;
 		}
 	}
 
@@ -59,7 +57,7 @@ public class Counter1 extends Applet
 		@Override
 		public void actionPerformed(ActionEvent e)
 		{
-			runFlag = !runFlag;
+			go();
 		}
 	}
 
